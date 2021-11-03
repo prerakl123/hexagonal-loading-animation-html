@@ -19,6 +19,21 @@ body {
     padding-top: 60%;
 }
 
+.infinite-rotation {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation: rotation 15s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .search-animation {
     position: relative;
     font-size: 8px;
